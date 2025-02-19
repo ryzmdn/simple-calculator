@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <main>
+      <header>
+        <label for="display">Calculator Display</label>
+        <input type="text" id="display" name="display" autocomplete="off" spellcheck="false" readonly />
+      </header>
+      <section>
+        <button type="button" onclick="clearDisplay()" class="operator">C</button>
+        <button type="button" onclick="appendOperator('+')" class="operator">&plus;</button>
+        <button type="button" onclick="appendOperator('-')" class="operator">&minus;</button>
+        <button type="button" onclick="backSpace()" class="operator">&larr;</button>
+        <button type="button" onclick="appendValue('1')">&#49;</button>
+        <button type="button" onclick="appendValue('2')">&#50;</button>
+        <button type="button" onclick="appendValue('3')">&#51;</button>
+        <button type="button" onclick="appendOperator('*')" class="operator">&times;</button>
+        <button type="button" onclick="appendValue('4')">&#52;</button>
+        <button type="button" onclick="appendValue('5')">&#53;</button>
+        <button type="button" onclick="appendValue('6')">&#54;</button>
+        <button type="button" onclick="appendOperator('/')" class="operator">&divide;</button>
+        <button type="button" onclick="appendValue('7')">&#55;</button>
+        <button type="button" onclick="appendValue('8')">&#56;</button>
+        <button type="button" onclick="appendValue('9')">&#57;</button>
+        <button type="button" onclick="appendOperator('%')" class="operator">&percnt;</button>
+        <button type="button" onclick="appendValue('.')">&comma;</button>
+        <button type="button" onclick="appendValue('0')">&#48;</button>
+        <button type="button" onclick="calculate()" class="operator calculate">&equals;</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

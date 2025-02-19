@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-inline: 1rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  min-height: 100vh;
+  background: #f9fafb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  background: transparent;
+  width: max-content;
+  max-width: 100%;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+header {
+  width: 100%;
+  text-align: left;
+  outline: 1px solid #9ca3af;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  user-select: none;
+}
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #9ca3af;
+}
+
+input {
+  text-align: right;
+  width: 100%;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 1.25rem;
+  border: none;
+  color: #111827;
+  background: transparent;
+  cursor: not-allowed;
+}
+input:focus {
+  outline: none;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+button {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+}
+button:not(:last-child) {
+  width: 60px;
+  height: 60px;
+  color: #111827;
+  background: #f3f4f6;
+}
+
+.operator {
+  color: #3b82f6 !important;
+}
+
+.operator.calculate {
+  grid-column: span 2 / span 2;
+  color: #f3f4f6 !important;
+  background: #3b82f6;
+}
